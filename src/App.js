@@ -98,7 +98,6 @@ function App() {
     };
 
     ordenesCompra[IndexOrdenSeleccionada].items.push(nuevoProducto);
-    console.log(nuevoProducto);
 
     setMostrarModalAgregar(false);
   };
@@ -237,8 +236,6 @@ function App() {
                                       .map((object) => object.id)
                                       .indexOf(item.id)
                                   );
-
-                                  console.log(item);
                                 }}
                               >
                                 <CIcon icon={cilPlusCircle} /> Agregar Producto
